@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+body, h1, h4, p, ul, li, button, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./img/image.jpg");
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+}
+
+.resultados-container {
+    display: grid;
+    place-items: center;
+    background-color: white;
+    height: 52vh;
+    border-radius: 25px;
+    grid-column: 2;
+    align-items: center;
+    justify-content: center;
+    margin-top: 168px;
+}
+
+.tituloResultado {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 25px;
+    margin-bottom: 4px;
+    color: #2F4F4F;
+}
+
+.resultados-list {
+    display: grid;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    color: 	#1C1C1C;
+    background-color: white;
+    text-decoration-color: #5F9EA0;
+    grid-template-columns: 2;
+    text-decoration: underline;
+    text-align: justify;
+    border-radius: 25px;
+    text-align-last: center;
+}
+
+button {
+    display: grid;
+    background-color: #43CD43;
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Instruments Sans', sans-serif;
+    color: white;
+    align-items: center;
+}
+
+button a {
+    font-family: 'Instruments Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+
+.pontos {
+    display: grid;
+    color: #20B2AA;
+    font-family: 'Instruments Sans', sans-serif;
+    font-size: 18px;
+}
+
+h5 {
+    display: grid;
+    color: #20B2AA;
+    font-family: 'Instruments Sans', sans-serif;
+    font-size: 13.2px;
+    border: 1px  solid #20B2AA;
+}

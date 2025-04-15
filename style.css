@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+body, h1, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./img/image.jpg");
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.divisaoFormulario {
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 25px;
+    grid-column: 2;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    width: 460px;
+    margin-left: 50px;
+}
+
+.titulo{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.subtitulo {
+    display: grid;
+    margin-left: 0px;
+    font-family: 'Instruments Sans', sans-serif;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.caixaTexto {
+    display: grid;
+    height: 30px;
+    right: 30px;
+    margin-left: 0px;
+    border-color: grey;
+    background-color: whitesmoke;
+}
+
+.button {
+    background-color: #43CD43;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Instruments Sans', sans-serif;
+    color: white;
+    margin-left: 0px;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}

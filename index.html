@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Bandeira</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form class="divisaoFormulario">
+        <div class="forrmulario">
+            <h1 class="titulo" id="titulo">Jogo Advinhação de<br>Bandeiras</h1>
+            <h4 class="subtitulo" id="subtitulo">Digite um nickname:</h4>
+            <input type="text" class="caixaTexto" id="caixaTexto">
+            <br>
+            <button class="button" id="comecarButton">Começar</button>
+        </div>
+    </form>
+    <!-- fim do html, inicio do js -->
+    <script> 
+        //após interação com o botão, haverá um evento de click
+        document.getElementById("comecarButton").addEventListener("click", function(event) {
+            event.preventDefault(); 
+
+            //pega o nome do usuario digitado na caixa de texto e salva em um LocalStorage
+            const nomeUsuario = document.getElementById("caixaTexto").value.trim();
+            if (nomeUsuario) {
+                localStorage.setItem("nomeUsuario", nomeUsuario);
+
+                //inicia o cronômetro no LocalStorage, se ainda não estiver iniciado
+                if (!localStorage.getItem('startTime')) {
+                    localStorage.setItem('startTime', Date.now());
+                }
+
+                window.location.href = "./rodada1.html";
+            } else {
+                alert("Por favor, digite um nome!");
+            }
+        });
+    </script>
+</body>
+</html>

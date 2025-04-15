@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados Finais</title>
+    <link rel="stylesheet" href="./resultados.css">
+
+
+    
+</head>
+<body>
+    <div class="resultados-container">
+        <h1 id="tituloResultado">Carregando...</h1>
+        
+        <h4 class="pontos" id="pontos">Pontos: </h4>
+        <h5 class="tempo" id="tempo">Tempo: </h5>
+        <ul id="resultados-list"></ul>
+
+        <button onclick="dell()">Voltar ao Início</button> <!-- ao clicar no botão inicializa a function dell() -->
+    </div>
+    
+
+    <script>
+        
+        //Apaga todos os dados e redireciona para o início
+        function dell() {
+            localStorage.clear(); // Limpar dados do localStorage
+
+            // Limpar resultados no servidor
+            fetch('http://localhost:1880/limpar-resultados', {
+                method: 'POST',
+            })
+            .then(response => {
+                if (response.status === 200) {
+                    console.log('Dados limpos com sucesso.');
+                } else {
+                    console.error('Erro ao limpar os dados.');
+                }
+            })
+            .catch(error => {
+                console.error('Erro ao limpar os dados:', error);
+            })
+            .finally(() => {
+                window.location.href = './rank.html'; // Redirecionar para o início
+            });
+        };
+
+        //conjunto de eventos ao iniciar a tela
+
+            console.log("Página carregada");
+            //buscando os valores dos LocalStorage
+            const nomeUsuario = localStorage.getItem('nomeUsuario');
+            let pt = 0;
+            document.getElementById('tituloResultado').classList.add('tituloResultado');
+            document.getElementById('resultados-list').classList.add('resultados-list');
+            document.getElementById('pontos').classList.add('pontos');
+            
+            if (nomeUsuario) {
+                document.getElementById('tituloResultado').innerText = `${nomeUsuario}, seus resultados finais são:`;
+            } else {
+                document.getElementById('tituloResultado').innerText = 'Resultados Finais:';
+            }
+
+            //executando a requizição /resultados ja configurada no index.js (servidor)
+            fetch('http://localhost:1880/resultados')
+                .then(response => response.json())
+                .then(data => {
+                    const resultadosList = document.getElementById('resultados-list');
+                    let pontuacaoTotal = 0;
+
+                    if (data.length === 0) {
+                        resultadosList.innerHTML = '<li>Não há resultados ainda.</li>';
+                    } else {
+                        console.log("ddd"+data.length);
+                        data.forEach(resultado => {
+                            pontuacaoTotal += resultado.pontuacao;
+                            pt = pontuacaoTotal;
+                            const listItem = document.createElement('li');
+                            listItem.textContent = `País: ${resultado.nomePais}, Resposta: ${resultado.respostaCorreta ? 'Correta' : 'Incorreta'}, Pontuação: ${resultado.pontuacao}`;
+                            resultadosList.appendChild(listItem);
+                        });
+                    }
+                    //exibindo pontuação
+                    const pontosDisplay = document.getElementById('pontos');
+                    if (pontosDisplay) {
+                        pontosDisplay.innerText = `Pontos: ${pontuacaoTotal}`;
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro ao buscar resultados:', error);
+                    alert('Ocorreu um erro ao buscar os resultados.');
+                });
+                
+
+                
+            // Exibir o tempo decorrido após converter para miutos e segundos
+            let startTime = localStorage.getItem('startTime');
+            if (startTime) {
+                
+                //localStorage.removeItem('startTime');  
+                const currentTime = Date.now();
+                const elapsedTime = currentTime - startTime;
+                const seconds = Math.floor(elapsedTime / 1000);
+                const minutes = Math.floor(seconds / 60);
+                const remainingSeconds = seconds % 60;
+                const timeString = `${minutes}m ${remainingSeconds}s`;
+                document.getElementById('tempo').innerText = `Tempo: ${timeString}`;
+
+                
+
+                fetch('http://localhost:1880/salvarRank', {
+                    
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        nome: nomeUsuario,
+                        pontuacao: pt,
+                        tempo: elapsedTime // salvar tempo em ms para facilitar ordenação
+                    })
+                }).then(res => {
+                    if (!res.ok) {
+                        console.error('Erro ao salvar no rank');
+                    }
+                    else{
+                        return;
+                    }
+                })
+         
+                
+                
+            }
+            
+        
+
+    </script>
+
+</body>
+
+</html>

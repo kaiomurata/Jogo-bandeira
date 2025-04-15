@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+body, h1, p, img, button, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./img/image.jpg");
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fundo-formulario {
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 25px;
+    grid-column: 2;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 500px;
+    margin-left: 50px;
+}
+
+h1 {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+p {
+    display: grid;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 15px;
+    margin-left: 0px;
+    margin-top: -12px;
+}
+
+.caixaBusca {
+    display: grid;
+    height: 25px;
+    right: 25px;
+    width: 340px;
+    margin-left: 22px;
+    margin-top: 10px;
+    border-color: gray;
+    background-color: whitesmoke;
+    align-items: center;
+    place-items: center;
+}
+
+button {
+    display: grid;
+    background-color: #43Cd43;
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    height: 25px;
+    cursor: pointer;
+    font-family: 'Instruments Sans', sans-serif;
+    color: white;
+    margin-left: 128px;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+}
+
+.btn-proximaRodada {
+    display: grid;
+    background-color: white;
+    border: none;
+    width: 115px;
+    height: 15px;
+    cursor: pointer;
+    font-family: 'Instruments Sans', sans-serif;
+    margin-left: 278px;
+    margin-top: 10px;
+}

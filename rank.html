@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+    <link rel="stylesheet" href="./rank.css">
+</head>
+<body>
+    <div class="ranking-container">
+        <h1>Ranking dos Melhores Jogadores</h1>
+        <ol id="ranking-list"></ol>
+        <button onclick="window.location.href='index.html'">Voltar ao Início</button>
+    </div>
+
+    <script>
+        fetch('http://localhost:1880/rank')
+            .then(response => response.json())
+            .then(data => {
+                const lista = document.getElementById('ranking-list');
+                data.forEach((jogador, index) => {
+                    const li = document.createElement('li');
+                    const tempoMin = Math.floor(jogador.tempo / 60000);
+                    const tempoSeg = Math.floor((jogador.tempo % 60000) / 1000);
+                    li.textContent = `${jogador.nome} - ${jogador.pontuacao} pts - ${tempoMin}m ${tempoSeg}s`;
+                    lista.appendChild(li);
+                });
+            })
+            .catch(error => {
+                console.error('Erro ao carregar ranking:', error);
+                alert('Erro ao carregar ranking!');
+            });
+    </script>
+</body>
+</html>
