@@ -1,0 +1,313 @@
+[
+    {
+        "id": "1",
+        "imagem": "https://flagcdn.com/h240/br.png",
+        "nomePais": "Brasil"
+    },
+
+    {
+        "id": "2",
+        "imagem": "https://flagcdn.com/h240/ar.png",
+        "nomePais": "Argentina"
+    },
+
+    {
+        "id": "3",
+        "imagem": "https://flagcdn.com/h240/de.png",
+        "nomePais": "Alemanha"
+    },
+
+    {
+        "id": "4",
+        "imagem": "https://flagcdn.com/h240/bd.png",
+        "nomePais": "Bangladesh"
+    },
+
+    {
+        "id": "5",
+        "imagem": "https://flagcdn.com/h240/au.png",
+        "nomePais": "Austrália"
+    },
+
+    {
+        "id": "6",
+        "imagem": "https://flagcdn.com/h120/qa.png",
+        "nomePais": "Catar"
+    },
+
+    {
+        "id": "7",
+        "imagem": "https://flagcdn.com/h240/ca.png",
+        "nomePais": "Canadá"
+    },
+
+    {
+        "id": "8",
+        "imagem": "https://flagcdn.com/h240/us.png",
+        "nomePais": "Estados Unidos"
+    },
+
+    {
+        "id": "9",
+        "imagem": "https://flagcdn.com/h240/ch.png",
+        "nomePais": "Suíça"
+    },
+
+    {
+        "id": "10",
+        "imagem": "https://flagcdn.com/h240/es.png",
+        "nomePais": "Espanha"
+    },
+
+    {
+        "id": "11",
+        "imagem": "https://flagcdn.com/h240/ao.png",
+        "nomePais": "Angola"
+    },
+
+    {
+        "id": "12",
+        "imagem": "https://flagcdn.com/h240/gb.png",
+        "nomePais": "Reino Unido"
+    },
+
+    {
+        "id": "13",
+        "imagem": "https://flagcdn.com/h240/jp.png",
+        "nomePais": "Japão"
+    },
+
+    {
+        "id": "14",
+        "imagem": "https://flagcdn.com/h240/pt.png",
+        "nomePais": "Portugal"
+    },
+
+    {
+        "id": "15",
+        "imagem": "https://flagcdn.com/h240/tw.png",
+        "nomePais": "Taiwan"
+    },
+
+    {
+        "id": "16",
+        "imagem": "https://flagcdn.com/h240/kr.png",
+        "nomePais": "Coreia do Sul"
+    },
+
+    {
+        "id": "17",
+        "imagem": "https://flagcdn.com/h240/mc.png",
+        "nomePais": "Monaco"
+    },
+
+    {
+        "id": "18",
+        "imagem": "https://flagcdn.com/h240/it.png",
+        "nomePais": "Itália"
+    },
+
+    {
+        "id": "19",
+        "imagem": "https://flagcdn.com/h240/nl.png",
+        "nomePais": "Holanda"
+    },
+
+    {
+        "id": "20",
+        "imagem": "https://flagcdn.com/h240/bh.png",
+        "nomePais": "Bahrain"
+    },
+
+    {
+        "id": "21",
+        "imagem": "https://flagcdn.com/h240/co.png",
+        "nomePais": "Colômbia"
+    },
+
+    {
+        "id": "22",
+        "imagem": "https://flagcdn.com/h240/il.png",
+        "nomePais": "Israel"
+    },
+
+    {
+        "id": "23",
+        "imagem": "https://flagcdn.com/h240/jm.png",
+        "nomePais": "Jamaica"
+    },
+
+    {
+        "id": "24",
+        "imagem": "https://flagcdn.com/h240/nz.png",
+        "nomePais": "Nova Zelândia"
+    },
+
+    {
+        "id": "25",
+        "imagem": "https://flagcdn.com/h240/ne.png",
+        "nomePais": "Niger"
+    },
+
+    {
+        "id": "26",
+        "imagem": "https://flagcdn.com/h240/ve.png",
+        "nomePais": "Venezuela"
+    },
+
+    {
+        "id": "27",
+        "imagem": "https://flagcdn.com/h240/za.png",
+        "nomePais": "África do Sul"
+    },
+
+    {
+        "id": "28",
+        "imagem": "https://flagcdn.com/h240/af.png",
+        "nomePais": "Afeganistão"
+    },
+
+    {
+        "id": "29",
+        "imagem": "https://flagcdn.com/h240/kp.png",
+        "nomePais": "Coreia do Norte"
+    },
+
+    {
+        "id": "30",
+        "imagem": "https://flagcdn.com/h240/np.png",
+        "nomePais": "Nepal"
+    },
+
+    {
+        "id": "31",
+        "imagem": "https://flagcdn.com/h240/mg.png",
+        "nomePais": "Madagascar"
+    },
+
+    {
+        "id": "32",
+        "imagem": "https://flagcdn.com/h240/ht.png",
+        "nomePais": "Haiti"
+    },
+
+    {
+        "id": "33",
+        "imagem": "https://flagcdn.com/h240/gh.png",
+        "nomePais": "Gana"
+    },
+
+    {
+        "id": "33",
+        "imagem": "https://flagcdn.com/h240/pg.png",
+        "nomePais": "Papua Nova Guiné"
+    },
+
+    {
+        "id": "34",
+        "imagem": "https://flagcdn.com/h240/py.png",
+        "nomePais": "Paraguai"
+    },
+
+    {
+        "id": "35",
+        "imagem": "https://flagcdn.com/h240/ng.png",
+        "nomePais": "Nigéria"
+    },
+
+    {
+        "id": "36",
+        "imagem": "https://flagcdn.com/h240/sa.png",
+        "nomePais": "Arabia Saudita"
+    },
+
+    {
+        "id": "37",
+        "imagem": "https://flagcdn.com/h240/pa.png",
+        "nomePais": "Panamá"
+    },
+
+    {
+        "id": "38",
+        "imagem": "https://flagcdn.com/h240/sg.png",
+        "nomePais": "Singapura"
+    },
+
+    {
+        "id": "39",
+        "imagem": "https://flagcdn.com/h240/ps.png",
+        "nomePais": "Palestina"
+    },
+
+    {
+        "id": "40",
+        "imagem": "https://flagcdn.com/h240/sk.png",
+        "nomePais": "Eslováquia"
+    },
+
+    {
+        "id": "41",
+        "imagem": "https://flagcdn.com/h240/si.png",
+        "nomePais": "Eslovênia"
+    },
+
+    {
+        "id": "42",
+        "imagem": "https://flagcdn.com/h240/pw.png",
+        "nomePais": "Palau"
+    },
+
+    {
+        "id": "43",
+        "imagem": "https://flagcdn.com/h240/rs.png",
+        "nomePais": "Sérvia"
+    },
+
+    {
+        "id": "44",
+        "imagem": "https://flagcdn.com/h240/tr.png",
+        "nomePais": "Turquia"
+    },
+
+    {
+        "id": "45",
+        "imagem": "https://flagcdn.com/h240/tl.png",
+        "nomePais": "Timor-Leste"
+    },
+
+    {
+        "id": "46",
+        "imagem": "https://flagcdn.com/h240/vn.png",
+        "nomePais": "Vietnã"
+    },
+
+    {
+        "id": "47",
+        "imagem": "https://flagcdn.com/h240/ua.png",
+        "nomePais": "Ucrânia"
+    },
+
+    {
+        "id": "48",
+        "imagem": "https://flagcdn.com/h240/ae.png",
+        "nomePais": "Emirados Árabes Unidos"
+    },
+
+    {
+        "id": "49",
+        "imagem": "https://flagcdn.com/h240/se.png",
+        "nomePais": "Suécia"
+    },
+
+    {
+        "id": "50",
+        "imagem": "https://flagcdn.com/h240/no.png",
+        "nomePais": "Noruega"
+    },
+
+    {
+        "id": "51",
+        "imagem": "https://flagcdn.com/h240/nr.png",
+        "nomePais": "Nauru"
+    }
+]
